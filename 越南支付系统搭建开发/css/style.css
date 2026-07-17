@@ -1,0 +1,683 @@
+﻿/* ===============================
+   Global Reset
+================================ */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "Microsoft YaHei", "Segoe UI", Arial, sans-serif;
+    color: #172033;
+    line-height: 1.7;
+    background: #fff;
+}
+
+
+
+/* ===============================
+   Header 国际金融导航
+================================ */
+
+
+.header {
+    height: 82px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    background: rgba(255,255,255,.88);
+    backdrop-filter: blur(15px);
+    z-index: 999;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+    transition: .3s;
+}
+
+
+
+    .header:hover {
+        box-shadow: 0 10px 30px rgba(0,40,100,.12);
+    }
+
+
+
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+    color: #06245c;
+    letter-spacing: .5px;
+}
+
+
+
+    .logo span {
+        display: block;
+        font-size: 12px;
+        font-weight: 400;
+        color: #1677ff;
+        letter-spacing: 1px;
+    }
+
+
+
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+
+    nav a {
+        margin-left: 38px;
+        text-decoration: none;
+        color: #27364d;
+        font-size: 15px;
+        position: relative;
+        transition: .3s;
+    }
+
+
+
+        nav a:hover {
+            color: #1677ff;
+        }
+
+
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 0;
+            height: 2px;
+            background: #1677ff;
+            transition: .3s;
+        }
+
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+
+
+
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: 0;
+    font-size: 28px;
+}
+
+
+
+
+
+
+/* ===============================
+   Hero 金融科技首屏
+================================ */
+
+
+.hero {
+    min-height: 760px;
+    padding: 150px 8% 80px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient( 120deg, rgba(245,250,255,0.95), rgba(255,255,255,0.75) ), url("../picture/hero-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+    .hero::before {
+        content: "";
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        right: -200px;
+        top: 100px;
+        background: radial-gradient( circle, rgba(22,119,255,.25), transparent 70% );
+    }
+
+
+
+
+
+.hero-text {
+    flex: 1;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.25;
+    color: #061b45;
+    font-weight: 800;
+}
+
+
+
+    .hero h1 span {
+        color: #1677ff;
+    }
+
+
+
+.hero p {
+    font-size: 19px;
+    color: #536174;
+    margin: 30px 0;
+    max-width: 600px;
+}
+
+
+
+
+
+.hero-image {
+    flex: 1;
+    position: relative;
+}
+
+
+
+    .hero-image img {
+        width: 100%;
+        border-radius: 25px;
+        box-shadow: 0 30px 70px rgba(0,60,150,.18);
+        animation: float 5s infinite ease-in-out;
+    }
+
+
+
+@keyframes float {
+
+
+    0%,100% {
+        transform: translateY(0);
+    }
+
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+
+
+
+
+
+/* ===============================
+ Button
+================================ */
+
+
+.btn {
+    display: inline-block;
+    padding: 15px 38px;
+    background: linear-gradient( 135deg, #1677ff, #005bea );
+    color: white;
+    border-radius: 35px;
+    text-decoration: none;
+    margin-right: 15px;
+    box-shadow: 0 10px 25px rgba(22,119,255,.35);
+    transition: .3s;
+}
+
+
+
+    .btn:hover {
+        transform: translateY(-3px);
+    }
+
+
+
+.outline {
+    background: white;
+    color: #1677ff;
+    border: 1px solid #1677ff;
+    box-shadow: none;
+}
+
+
+
+
+
+/* ===============================
+ Section
+================================ */
+
+
+.section {
+    padding: 90px 8%;
+    text-align: center;
+}
+
+
+
+h2 {
+    font-size: 36px;
+    color: #09204c;
+    margin-bottom: 50px;
+    font-weight: 800;
+}
+
+
+
+
+
+
+
+/* ===============================
+ 服务卡片
+================================ */
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+
+
+
+
+.card {
+    padding: 40px 30px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.06);
+    transition: .35s;
+    border: 1px solid #f0f4fa;
+}
+
+
+
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 25px 60px rgba(0,80,180,.15);
+    }
+
+
+
+    .card h3 {
+        color: #0b1f45;
+        margin-bottom: 15px;
+    }
+
+
+
+
+
+/* ===============================
+ 支付生态
+================================ */
+
+
+.payment {
+    padding: 90px 8%;
+    background: linear-gradient( 135deg, #f5f9ff, #ffffff );
+    text-align: center;
+}
+
+
+
+
+
+.pay-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+
+    .pay-list div {
+        min-width: 180px;
+        padding: 30px;
+        background: white;
+        border-radius: 15px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #102a56;
+        box-shadow: 0 10px 30px rgba(0,50,120,.08);
+        transition: .3s;
+    }
+
+
+
+        .pay-list div:hover {
+            transform: translateY(-8px);
+            color: #1677ff;
+        }
+
+
+
+
+
+/* ===============================
+ 架构流程
+================================ */
+
+
+.architecture {
+    background: #f8fbff;
+}
+
+
+
+.flow div {
+    display: inline-block;
+    padding: 22px 45px;
+    margin: 12px;
+    background: white;
+    border-radius: 15px;
+    font-weight: 600;
+    color: #0b1f45;
+    box-shadow: 0 10px 30px rgba(0,50,120,.08);
+}
+
+
+
+
+
+/* ===============================
+ 安全模块
+================================ */
+
+
+.security {
+    padding: 90px 8%;
+    text-align: center;
+    background: linear-gradient( 135deg, #061b45, #0b3c88 );
+    color: white;
+}
+
+
+
+    .security h2 {
+        color: white;
+    }
+
+
+
+
+
+
+/* ===============================
+ 新闻
+================================ */
+
+
+.news {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 35px;
+}
+
+
+
+    .news article {
+        background: white;
+        padding: 35px;
+        border-radius: 15px;
+        text-align: left;
+        box-shadow: 0 15px 35px rgba(0,0,0,.08);
+        transition: .3s;
+    }
+
+
+
+        .news article:hover {
+            transform: translateY(-8px);
+        }
+
+
+
+
+
+/* ===============================
+ Contact
+================================ */
+
+
+.contact {
+    padding: 100px 8%;
+    text-align: center;
+    background: linear-gradient( 135deg, #1677ff, #003b9b );
+    color: white;
+}
+
+
+    .contact h2 {
+        color: white;
+    }
+
+
+
+
+
+footer {
+    padding: 35px;
+    text-align: center;
+    color: #666;
+}
+
+
+
+
+
+
+
+
+/* ===============================
+ Mobile
+================================ */
+
+
+@media(max-width:768px) {
+
+
+
+    .header {
+        padding: 0 20px;
+    }
+
+
+
+    nav {
+        position: absolute;
+        top: 82px;
+        left: 0;
+        width: 100%;
+        background: white;
+        display: none;
+        flex-direction: column;
+        box-shadow: 0 10px 30px #ddd;
+    }
+
+
+
+        nav a {
+            margin: 0;
+            padding: 18px;
+        }
+
+
+
+        nav.active {
+            display: flex;
+        }
+
+
+
+
+    .menu-btn {
+        display: block;
+    }
+
+
+
+
+    .hero {
+        flex-direction: column;
+        padding-top: 130px;
+    }
+
+
+
+        .hero h1 {
+            font-size: 34px;
+        }
+
+
+
+        .hero p {
+            font-size: 16px;
+        }
+
+
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+
+
+
+    .news {
+        grid-template-columns: 1fr;
+    }
+
+
+
+    .pay-list div {
+        width: 100%;
+    }
+}
+
+/* 数据指标 */
+
+.stats {
+    display: flex;
+    gap: 40px;
+    margin-top: 45px;
+}
+
+
+    .stats strong {
+        font-size: 32px;
+        color: #1677ff;
+    }
+
+
+    .stats p {
+        font-size: 14px;
+        color: #666;
+    }
+
+
+
+
+/* 支付logo */
+
+.pay-list img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* 安全模块 */
+
+.security-list {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+    .security-list div {
+        padding: 20px 40px;
+        background: rgba(255,255,255,.12);
+        border-radius: 12px;
+    }
+
+
+
+
+
+@media(max-width:768px) {
+
+    .stats {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* 联系区域友情链接 */
+
+.friend-links {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+
+    .friend-links a {
+        display: block;
+        min-width: 180px;
+        padding: 15px 30px;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 12px;
+        background: rgba(255,255,255,0.12);
+        border: 1px solid rgba(255,255,255,0.35);
+        backdrop-filter: blur(8px);
+        font-size: 16px;
+        transition: all .35s ease;
+    }
+
+
+
+
+        .friend-links a:hover {
+            background: #1677ff;
+            border-color: #1677ff;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,.25);
+        }
