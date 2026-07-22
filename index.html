@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>
+        越南支付系统开发｜Vietnam Payment Gateway｜支付网关搭建与API支付解决方案
+    </title>
+
+
+    <meta name="description" content="
+越南支付系统开发服务，提供Vietnam Payment Gateway、聚合支付系统、
+API接口开发、钱包支付、银行支付渠道接入及跨境支付解决方案。
+帮助企业快速搭建越南本地数字支付平台。
+">
+
+
+    <meta name="keywords" content="
+越南支付系统开发,
+Vietnam Payment Gateway,
+越南支付接口,
+越南聚合支付系统,
+越南钱包支付,
+越南二维码支付,
+跨境支付系统
+">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="picture/favicon.png" type="image/x-icon">
+
+
+    <meta property="og:title" content="Vietnam Payment Gateway｜越南支付系统开发">
+
+
+    <meta property="og:description" content="连接越南数字支付生态，为企业提供专业支付系统建设方案">
+
+
+    <meta property="og:type" content="website">
+
+
+
+    <script type="application/ld+json">
+
+{
+ "@context":"https://schema.org",
+ "@type":"Organization",
+ "name":"GlobalPay Vietnam Payment",
+ "description":"Vietnam Payment Gateway Development",
+ "serviceType":"Payment System Development"
+}
+
+</script>
+
+
+</head>
+
+
+
+<body>
+
+
+
+    <!-- Header -->
+
+    <header class="header">
+
+
+        <div class="logo">
+
+            GlobalPay
+
+            <span>
+                Vietnam Payment Solution
+            </span>
+
+        </div>
+
+
+
+        <nav id="nav">
+
+            <a href="/">
+                首页
+            </a>
+
+
+            <a href="Vietnam-Payment.html">
+                越南支付
+            </a>
+
+
+            <a href="about.html">
+                关于我们
+            </a>
+
+
+            <a href="system.html">
+                系统架构
+            </a>
+
+
+            <a href="news.html">
+                支付新闻
+            </a>
+
+
+            <a href="https://t.me/ukpaysys" target="_blank" rel="nofollow">
+                联系我们
+            </a>
+
+
+        </nav>
+
+    </header>
+
+
+
+
+
+
+
+    <!-- Hero -->
+
+
+    <section class="hero" id="home">
+
+
+        <div class="hero-text">
+
+
+
+            <h1>
+
+                连接越南数字经济<br>
+
+                <span>
+                    打造企业级支付基础设施
+                </span>
+
+            </h1>
+
+
+
+
+            <p>
+
+                提供越南支付网关、电子钱包支付、
+                银行渠道接入、API接口开发等完整解决方案。
+
+                帮助企业快速进入越南数字支付市场。
+
+            </p>
+
+
+
+
+            <div>
+
+
+                <a href="https://t.me/ukpaysys" target="_blank" rel="nofollow" class="btn">
+
+                    立即咨询
+
+                </a>
+
+
+                <a href="system.html" class="btn outline">
+
+                    查看方案
+
+                </a>
+
+
+            </div>
+
+
+
+
+            <!-- 数据指标 -->
+
+
+            <div class="stats">
+
+
+                <div>
+
+                    <strong>
+                        50+
+                    </strong>
+
+                    <p>
+                        支付功能模块
+                    </p>
+
+                </div>
+
+
+
+                <div>
+
+                    <strong>
+                        99.99%
+                    </strong>
+
+                    <p>
+                        系统稳定性
+                    </p>
+
+                </div>
+
+
+
+                <div>
+
+                    <strong>
+                        24/7
+                    </strong>
+
+                    <p>
+                        技术支持
+                    </p>
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+        <div class="hero-image">
+
+
+            <img src="picture/hero-bg.png" alt="Vietnam Payment Gateway System" loading="lazy">
+
+
+
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- 解决方案 -->
+
+
+    <section class="section" id="solution">
+
+
+        <h2>
+            专业越南支付系统开发能力
+        </h2>
+
+
+
+        <div class="cards">
+
+
+            <div class="card">
+
+
+                <h3>
+                    支付网关
+                </h3>
+
+
+                <p>
+                    构建企业支付入口，
+                    连接越南本地支付渠道。
+                </p>
+
+
+            </div>
+
+
+
+
+            <div class="card">
+
+
+                <h3>
+                    API支付接口
+                </h3>
+
+
+                <p>
+                    提供标准API接口，
+                    快速接入企业业务系统。
+                </p>
+
+
+            </div>
+
+
+
+
+
+            <div class="card">
+
+
+                <h3>
+                    智能支付路由
+                </h3>
+
+
+                <p>
+                    根据交易规则灵活配置最佳支付通道。
+                </p>
+
+
+            </div>
+
+
+
+
+
+            <div class="card">
+
+
+                <h3>
+                    多商户管理
+                </h3>
+
+
+                <p>
+                    支持商户管理、权限配置及交易统计。
+                </p>
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- 支付生态 -->
+
+
+    <section class="payment" id="payment">
+
+
+        <h2>
+
+            覆盖越南主流支付生态
+
+        </h2>
+
+
+
+        <div class="pay-list">
+
+
+            <div>
+
+                <img src="picture/momo.png" alt="MoMo Payment" loading="lazy">
+
+                <p>
+                    MoMo
+                </p>
+
+            </div>
+
+
+
+            <div>
+
+                <img src="picture/vnpay.png" alt="VNPay" loading="lazy">
+
+                <p>
+                    VNPay
+                </p>
+
+            </div>
+
+
+
+
+            <div>
+
+                <img src="picture/zalopay.png" alt="ZaloPay" loading="lazy">
+
+                <p>
+                    ZaloPay
+                </p>
+
+            </div>
+
+
+
+            <div>
+
+                <img src="picture/viettel.png" alt="Viettel Money" loading="lazy">
+
+                <p>
+                    Viettel Money
+                </p>
+
+            </div>
+
+
+
+            <div>
+                <img src="picture/Bank Payment.png" alt="Bank Payment" loading="lazy">
+                <p>
+                    Bank Payment
+                </p>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- 架构 -->
+
+
+    <section class="section architecture" id="architecture">
+
+
+        <h2>
+            稳定可靠的支付系统架构
+        </h2>
+
+
+
+        <div class="flow">
+
+
+            <div>
+                用户
+            </div>
+
+
+            <span>
+                ↓
+            </span>
+
+
+            <div>
+                企业收银台
+            </div>
+
+
+            <span>
+                ↓
+            </span>
+
+
+
+            <div>
+                支付网关
+            </div>
+
+
+            <span>
+                ↓
+            </span>
+
+
+
+            <div>
+                智能路由系统
+            </div>
+
+
+            <span>
+                ↓
+            </span>
+
+
+
+            <div>
+                钱包 / 银行渠道
+            </div>
+
+
+            <span>
+                ↓
+            </span>
+
+
+
+            <div>
+                清算结算系统
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- 优势 -->
+
+
+    <section class="section">
+
+
+        <h2>
+            系统核心优势
+        </h2>
+
+
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <h3>
+                    高并发架构
+                </h3>
+
+                <p>
+                    支持企业业务持续增长。
+                </p>
+
+            </div>
+
+
+
+
+            <div class="card">
+
+                <h3>
+                    实时交易监控
+                </h3>
+
+                <p>
+                    订单状态实时追踪。
+                </p>
+
+            </div>
+
+
+
+
+            <div class="card">
+
+                <h3>
+                    智能风控体系
+                </h3>
+
+                <p>
+                    保障交易安全稳定。
+                </p>
+
+            </div>
+
+
+
+
+            <div class="card">
+
+                <h3>
+                    快速部署上线
+                </h3>
+
+                <p>
+                    缩短企业开发周期。
+                </p>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- 安全 -->
+
+
+    <section class="security" id="security">
+
+
+        <h2>
+            企业级安全保障体系
+        </h2>
+
+
+
+        <div class="security-list">
+
+
+            <div>
+                数据加密
+            </div>
+
+
+            <div>
+                权限控制
+            </div>
+
+
+            <div>
+                风险监测
+            </div>
+
+
+            <div>
+                日志审计
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- 新闻 -->
+
+
+    <section class="section">
+
+
+        <h2>
+            越南数字支付市场资讯
+        </h2>
+
+
+
+
+        <div class="news">
+
+
+            <article>
+
+
+                <h3>
+                    越南移动支付市场持续增长
+                </h3>
+
+
+                <p>
+                    电子钱包和二维码支付正在成为越南重要支付方式。
+                </p>
+
+
+            </article>
+
+
+
+
+            <article>
+
+
+                <h3>
+                    企业如何搭建越南支付系统
+                </h3>
+
+
+                <p>
+                    本地化支付解决方案帮助企业快速进入越南市场。
+                </p>
+
+
+            </article>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- Contact -->
+
+
+    <section class="contact" id="contact">
+
+
+        <h2>
+            开启越南支付系统建设
+        </h2>
+
+
+        <p>
+            获取专属支付系统开发方案
+        </p>
+
+
+        <br>
+
+
+        <a href="https://t.me/ukpaysys" target="_blank" rel="nofollow" class="btn">
+
+            联系我们
+
+        </a>
+
+
+
+        <div class="friend-links">
+
+
+            <a>
+                巴西支付系统
+            </a>
+
+
+
+            <a>
+                马来西亚系统开发
+            </a>
+
+
+
+            <a>
+                菲律宾支付系统开发
+            </a>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <footer>
+
+
+        <p>
+
+            © 2026 GlobalPay Vietnam Payment Solution
+
+        </p>
+
+
+    </footer>
+
+
+
+
+
+    <script src="js/main.js"></script>
+
+
+
+</body>
+
+
+</html>
